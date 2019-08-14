@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="La7-Pj-x9I">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginViewController" customModule="BookStorage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSo-d4-QDT">
+                                <rect key="frame" x="20" y="605" width="370" height="69"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LogIn" label="LogIn"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="16"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="0.96862745100000003" green="0.43921568630000002" blue="0.38431372549999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogn-bw-Zms"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-xK-ueJ">
+                                <rect key="frame" x="20" y="450" width="370" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="passwordInput" label="passwordInput"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="fW9-PS-Ufr"/>
+                                </constraints>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="idea (1).png" translatesAutoresizingMaskIntoConstraints="NO" id="Uyh-ci-66E">
+                                <rect key="frame" x="133" y="150" width="148" height="160"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="line" placeholder="Username" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="RRP-af-A2Q">
+                                <rect key="frame" x="20" y="380" width="370" height="69"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="userNameInput" label="userNameInput"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="COt-SL-KBX"/>
+                                </constraints>
+                                <color key="textColor" red="0.52941176469999995" green="0.52941176469999995" blue="0.52941176469999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.4392156862745098" blue="0.38431372549019605" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ABK-xK-ueJ" firstAttribute="leading" secondItem="CSo-d4-QDT" secondAttribute="leading" id="0uQ-ft-DC4"/>
+                            <constraint firstItem="ABK-xK-ueJ" firstAttribute="trailing" secondItem="CSo-d4-QDT" secondAttribute="trailing" id="CLO-7l-Bzd"/>
+                            <constraint firstItem="Uyh-ci-66E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="133" id="FBF-ju-L5a"/>
+                            <constraint firstItem="RRP-af-A2Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Fo6-Kx-Vud"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RRP-af-A2Q" secondAttribute="trailing" constant="24" id="Hjk-RV-Xqm"/>
+                            <constraint firstItem="ABK-xK-ueJ" firstAttribute="top" secondItem="RRP-af-A2Q" secondAttribute="bottom" constant="1" id="KAs-Yq-nZH"/>
+                            <constraint firstItem="CSo-d4-QDT" firstAttribute="top" secondItem="ABK-xK-ueJ" secondAttribute="bottom" constant="86" id="LDI-q1-XsY"/>
+                            <constraint firstItem="Uyh-ci-66E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LtU-Vr-Zyx"/>
+                            <constraint firstItem="Uyh-ci-66E" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="anX-tJ-KvT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="CSo-d4-QDT" secondAttribute="bottom" constant="188" id="bw3-bs-Kgy"/>
+                            <constraint firstItem="RRP-af-A2Q" firstAttribute="leading" secondItem="ABK-xK-ueJ" secondAttribute="leading" id="c9n-c4-eHG"/>
+                            <constraint firstItem="RRP-af-A2Q" firstAttribute="trailing" secondItem="ABK-xK-ueJ" secondAttribute="trailing" id="gA9-uy-hOT"/>
+                            <constraint firstItem="RRP-af-A2Q" firstAttribute="top" secondItem="Uyh-ci-66E" secondAttribute="bottom" constant="70" id="p70-PY-MFx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MiZ-55-CgT"/>
+                    <connections>
+                        <outlet property="passwordInput" destination="ABK-xK-ueJ" id="4Vt-A9-sv6"/>
+                        <outlet property="userNameInout" destination="RRP-af-A2Q" id="887-xK-DXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-965.21739130434787" y="124.55357142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fpJ-Wo-zNQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="La7-Pj-x9I" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="C6F-rz-FAb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="kGi-lk-6us"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vlm-0o-kqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1875.3623188405797" y="124.55357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="idea (1).png" width="147" height="160"/>
+    </resources>
+</document>
